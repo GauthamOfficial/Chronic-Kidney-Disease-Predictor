@@ -1,3 +1,3 @@
 ckd predictor
 
-##CKD predictor
+##Chronic Kidney Disease predictor
