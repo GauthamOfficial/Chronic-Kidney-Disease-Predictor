@@ -1,14 +1,16 @@
 {
-    "builds": [{
-        "src": "ckdProject/wsgi.py",
+    "builds": [
+      {
+        "src": "ckdProject/server.py",
         "use": "@vercel/python",
-        "config": {"maxLambdaSize": "15mb", "runtime": "python3.9"}
-    }],
-
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.10" }
+      }
+    ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "ckdProject/wsgi.py"
-        }
+      {
+        "src": "/(.*)",
+        "dest": "ckdProject/server.py"
+      }
     ]
-}
+  }
+  
